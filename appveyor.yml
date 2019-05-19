@@ -40,4 +40,7 @@ build_script:
 - cd src
 - python build_mozc.py gyp --qtdir=C:\Qt\5.6\msvc2015
 - python build_mozc.py build -c Release package
+artifacts:
+- path: 'src\out_win\'
+  name: Windows
 test: off
